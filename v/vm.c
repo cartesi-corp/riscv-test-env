@@ -10,8 +10,8 @@
 void trap_entry();
 void pop_tf(trapframe_t*);
 
-volatile uint64_t tohost;
-volatile uint64_t fromhost;
+extern volatile uint64_t tohost;
+extern volatile uint64_t fromhost;
 
 static void do_tohost(uint64_t tohost_value)
 {
